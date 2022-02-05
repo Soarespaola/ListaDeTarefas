@@ -11,9 +11,17 @@ import CoreData
 class TodoListViewController: UITableViewController {
     
     var itemArray = ["Limpar casa", "Fazer compras", "Estudar"]
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let items = defaults.array(forKey: "TodoListArray") as? [String] {
+            
+            itemArray = items
+            
+        }
         
         let appearance = UINavigationBarAppearance()
                appearance.configureWithTransparentBackground()
@@ -64,6 +72,8 @@ class TodoListViewController: UITableViewController {
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             // aqui vai ser o que acontecerá quando o usuario clicar no botao adicionar item no UIAlert
             self.itemArray.append(textField.text!)
+            
+            self.defaults.set(self.itemArray, forKey: "TodoListArray")
             
             self.tableView.reloadData()
             
