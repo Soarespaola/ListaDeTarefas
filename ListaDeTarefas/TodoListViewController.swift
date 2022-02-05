@@ -6,17 +6,18 @@
 //
 
 import UIKit
+import CoreData
 
 class TodoListViewController: UITableViewController {
     
-    let itemArray = ["Limpar casa", "Fazer compras", "Estudar"]
+    var itemArray = ["Limpar casa", "Fazer compras", "Estudar"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let appearance = UINavigationBarAppearance()
                appearance.configureWithTransparentBackground()
-               appearance.backgroundColor = UIColor.systemPink
+               appearance.backgroundColor = UIColor.systemGray
                appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
                navigationItem.standardAppearance = appearance
                navigationItem.scrollEdgeAppearance = appearance
@@ -35,5 +36,52 @@ class TodoListViewController: UITableViewController {
         
         return cell
     }
+    
+    //MARK: - TableView Delegate Methods
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print(indexPath.row)
+        
+        
+        if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        } else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
+    //MARK: - Add New Items
+    
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        
+        var textField = UITextField ()
+        
+        let alert = UIAlertController(title: "Add new Todoey", message: "", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+            // aqui vai ser o que acontecerá quando o usuario clicar no botao adicionar item no UIAlert
+            self.itemArray.append(textField.text!)
+            
+            self.tableView.reloadData()
+            
+        }
+        
+        alert.addTextField { (alertTextField) in
+            alertTextField.placeholder = "Create new item"
+            textField = alertTextField
+            
+        }
+        alert.addAction(action)
+            
+        present(alert, animated: true, completion: nil)
+            
+
+        
+        
+    }
+    
 }
 
