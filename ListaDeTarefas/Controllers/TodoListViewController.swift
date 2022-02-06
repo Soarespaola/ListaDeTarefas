@@ -21,6 +21,7 @@ class TodoListViewController: UITableViewController {
         
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         
+        
         loadItems()
 //
 //        if let items = defaults.array(forKey: "TodoListArray") as? [Item] {
@@ -73,7 +74,9 @@ class TodoListViewController: UITableViewController {
     //MARK: - TableView Delegate Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print(indexPath.row)
+        
+//        context.delete(itemArray[indexPath.row])
+//        itemArray.remove(at: indexPath.row)
         
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
      
@@ -138,7 +141,36 @@ class TodoListViewController: UITableViewController {
         } catch {
             print("Error fetching data from context \(error)")
         }
+        
+        tableView.reloadData()
 
+    }
+    
+    
+}
+//MARK: - Search bar methods
+
+extension TodoListViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request : NSFetchRequest<Item> = Item.fetchRequest()
+        
+        let predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+        
+        request.predicate = predicate
+        
+        let sortDescriptr = NSSortDescriptor(key: "title", ascending: true)
+        
+        request.sortDescriptors = [sortDescriptr]
+        
+        do {
+        itemArray = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+        
+        tableView.reloadData()
+        
+        
     }
     
 }
