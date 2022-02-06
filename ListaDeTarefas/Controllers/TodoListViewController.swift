@@ -159,9 +159,18 @@ extension TodoListViewController: UISearchBarDelegate {
         request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
         
         loadItems(with: request)
-        
-        
-        
+     
+    }
+    //quando o usuario apagar os carecteres e ele for = 0 voltará para tela onde existe outros itens.
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 0 {
+            loadItems()
+            
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+            
+        }
     }
     
 }
