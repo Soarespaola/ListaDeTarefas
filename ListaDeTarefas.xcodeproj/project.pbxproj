@@ -75,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				53CC447C27AF09FE00C393CC /* TodoListViewController.swift */,
-				53CC449327AF3B0E00C393CC /* Item.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -100,6 +99,7 @@
 		53CC449227AF39FF00C393CC /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				53CC449327AF3B0E00C393CC /* Item.swift */,
 				53CC448127AF09FE00C393CC /* ListaDeTarefas.xcdatamodeld */,
 			);
 			path = "Data Model";
