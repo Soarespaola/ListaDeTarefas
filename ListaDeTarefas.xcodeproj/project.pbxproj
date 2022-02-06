@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53B4051527B07BB800FAEDD9 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B4051427B07BB800FAEDD9 /* CategoryViewController.swift */; };
 		53CC447927AF09FE00C393CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC447827AF09FE00C393CC /* AppDelegate.swift */; };
 		53CC447B27AF09FE00C393CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC447A27AF09FE00C393CC /* SceneDelegate.swift */; };
 		53CC447D27AF09FE00C393CC /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC447C27AF09FE00C393CC /* TodoListViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53B4051427B07BB800FAEDD9 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		53CC447527AF09FE00C393CC /* ListaDeTarefas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaDeTarefas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CC447827AF09FE00C393CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53CC447A27AF09FE00C393CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		53CC448F27AF398C00C393CC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				53B4051427B07BB800FAEDD9 /* CategoryViewController.swift */,
 				53CC447C27AF09FE00C393CC /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B4051527B07BB800FAEDD9 /* CategoryViewController.swift in Sources */,
 				53CC447D27AF09FE00C393CC /* TodoListViewController.swift in Sources */,
 				53CC447927AF09FE00C393CC /* AppDelegate.swift in Sources */,
 				53CC447B27AF09FE00C393CC /* SceneDelegate.swift in Sources */,
