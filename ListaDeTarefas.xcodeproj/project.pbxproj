@@ -12,22 +12,28 @@
 		53CC447B27AF09FE00C393CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC447A27AF09FE00C393CC /* SceneDelegate.swift */; };
 		53CC447D27AF09FE00C393CC /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC447C27AF09FE00C393CC /* TodoListViewController.swift */; };
 		53CC448027AF09FE00C393CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CC447E27AF09FE00C393CC /* Main.storyboard */; };
-		53CC448327AF09FE00C393CC /* ListaDeTarefas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53CC448127AF09FE00C393CC /* ListaDeTarefas.xcdatamodeld */; };
 		53CC448527AF0A0100C393CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53CC448427AF0A0100C393CC /* Assets.xcassets */; };
 		53CC448827AF0A0100C393CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CC448627AF0A0100C393CC /* LaunchScreen.storyboard */; };
+		53EDE3F027B1740F00EA5D3D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EDE3EF27B1740F00EA5D3D /* Item.swift */; };
+		53EDE3F227B1743100EA5D3D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EDE3F127B1743100EA5D3D /* Category.swift */; };
+		63C3908FCEF8604F712BE2EE /* Pods_ListaDeTarefas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF29BA5ABF9098AFDA884C7 /* Pods_ListaDeTarefas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B8A78A899B369259F54CA6E /* Pods-ListaDeTarefas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaDeTarefas.release.xcconfig"; path = "Target Support Files/Pods-ListaDeTarefas/Pods-ListaDeTarefas.release.xcconfig"; sourceTree = "<group>"; };
+		4767EBF16FA590EE81F2D260 /* Pods-ListaDeTarefas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaDeTarefas.debug.xcconfig"; path = "Target Support Files/Pods-ListaDeTarefas/Pods-ListaDeTarefas.debug.xcconfig"; sourceTree = "<group>"; };
 		53B4051427B07BB800FAEDD9 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		53CC447527AF09FE00C393CC /* ListaDeTarefas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaDeTarefas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CC447827AF09FE00C393CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53CC447A27AF09FE00C393CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53CC447C27AF09FE00C393CC /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		53CC447F27AF09FE00C393CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		53CC448227AF09FE00C393CC /* ListaDeTarefas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListaDeTarefas.xcdatamodel; sourceTree = "<group>"; };
 		53CC448427AF0A0100C393CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53CC448727AF0A0100C393CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53CC448927AF0A0100C393CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53EDE3EF27B1740F00EA5D3D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		53EDE3F127B1743100EA5D3D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		6FF29BA5ABF9098AFDA884C7 /* Pods_ListaDeTarefas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListaDeTarefas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C3908FCEF8604F712BE2EE /* Pods_ListaDeTarefas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				53CC447727AF09FE00C393CC /* ListaDeTarefas */,
 				53CC447627AF09FE00C393CC /* Products */,
+				5C258A55A40F7206FFB69A9F /* Pods */,
+				F2EB81D41586F83EF23D5579 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +109,27 @@
 		53CC449227AF39FF00C393CC /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				53CC448127AF09FE00C393CC /* ListaDeTarefas.xcdatamodeld */,
+				53EDE3F127B1743100EA5D3D /* Category.swift */,
+				53EDE3EF27B1740F00EA5D3D /* Item.swift */,
 			);
 			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		5C258A55A40F7206FFB69A9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4767EBF16FA590EE81F2D260 /* Pods-ListaDeTarefas.debug.xcconfig */,
+				1B8A78A899B369259F54CA6E /* Pods-ListaDeTarefas.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F2EB81D41586F83EF23D5579 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FF29BA5ABF9098AFDA884C7 /* Pods_ListaDeTarefas.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53CC448C27AF0A0100C393CC /* Build configuration list for PBXNativeTarget "ListaDeTarefas" */;
 			buildPhases = (
+				8BB704867679A7C756AB48B2 /* [CP] Check Pods Manifest.lock */,
 				53CC447127AF09FE00C393CC /* Sources */,
 				53CC447227AF09FE00C393CC /* Frameworks */,
 				53CC447327AF09FE00C393CC /* Resources */,
+				B581CA1A53FAC4C5FA867B10 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +200,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8BB704867679A7C756AB48B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListaDeTarefas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B581CA1A53FAC4C5FA867B10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListaDeTarefas/Pods-ListaDeTarefas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListaDeTarefas/Pods-ListaDeTarefas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListaDeTarefas/Pods-ListaDeTarefas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		53CC447127AF09FE00C393CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -180,7 +251,8 @@
 				53CC447D27AF09FE00C393CC /* TodoListViewController.swift in Sources */,
 				53CC447927AF09FE00C393CC /* AppDelegate.swift in Sources */,
 				53CC447B27AF09FE00C393CC /* SceneDelegate.swift in Sources */,
-				53CC448327AF09FE00C393CC /* ListaDeTarefas.xcdatamodeld in Sources */,
+				53EDE3F027B1740F00EA5D3D /* Item.swift in Sources */,
+				53EDE3F227B1743100EA5D3D /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +396,7 @@
 		};
 		53CC448D27AF0A0100C393CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4767EBF16FA590EE81F2D260 /* Pods-ListaDeTarefas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -337,6 +410,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,6 +426,7 @@
 		};
 		53CC448E27AF0A0100C393CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8A78A899B369259F54CA6E /* Pods-ListaDeTarefas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -365,6 +440,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,19 +476,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		53CC448127AF09FE00C393CC /* ListaDeTarefas.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				53CC448227AF09FE00C393CC /* ListaDeTarefas.xcdatamodel */,
-			);
-			currentVersion = 53CC448227AF09FE00C393CC /* ListaDeTarefas.xcdatamodel */;
-			path = ListaDeTarefas.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 53CC446D27AF09FE00C393CC /* Project object */;
 }
