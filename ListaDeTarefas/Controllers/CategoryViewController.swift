@@ -19,6 +19,13 @@ class CategoryViewController: UITableViewController {
         
         loadCategories()
         
+        let appearance = UINavigationBarAppearance()
+               appearance.configureWithTransparentBackground()
+               appearance.backgroundColor = UIColor.systemGray
+               appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+               navigationItem.standardAppearance = appearance
+               navigationItem.scrollEdgeAppearance = appearance
+        
     }
 
     
